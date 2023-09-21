@@ -17,7 +17,7 @@ def lista(request):
 def notas(request):
     return HttpResponse(
         "<h1>Notas primer semestre<h1/>"
-        "<h2>Notas del Alumno</h1>"
+       """<h2 style="color:red">Notas del Alumno</h1>"""
         """<table border="1">
         <tr>
             <th>Materia</th>
@@ -40,7 +40,7 @@ def notas(request):
             <td>6.8</td>
         </tr>
         </table>"""
-
+        
         "<footer>Las notas disponibles en esta pagina son privadas y se prohibe su difusion<footer/>"
     )
 
