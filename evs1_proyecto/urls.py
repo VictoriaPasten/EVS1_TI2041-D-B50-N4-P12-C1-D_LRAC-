@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from vapv_recomendacionesapp import views as v3
+from vapv_recomendacionesapp import views as v4
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('v3', v3.recomendacion),
+    path('v4', v4.informacion),
 ]
