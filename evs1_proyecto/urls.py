@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from vapv_listapp import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('v1', v1.lista)
 ]
